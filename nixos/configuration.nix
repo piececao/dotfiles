@@ -103,12 +103,18 @@
     v2raya
     tree
     ntfs3g
+    samsung-unified-linux-driver
+    splix
     kdePackages.konsole
     kdePackages.dolphin
     kdePackages.okular
     kdePackages.gwenview
     kdePackages.kmix
     wqy_microhei
+  ];
+  services.printing.drivers = with pkgs; [
+    samsung-unified-linux-driver
+    splix
   ];
 
   services.v2raya.enable = true;
