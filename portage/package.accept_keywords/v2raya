@@ -1,0 +1,13 @@
+# required by virtual/v2ray-domain-list-community-0::gentoo-zh
+# required by app-alternatives/v2ray-geosite-0-r2::gentoo-zh[v2fly]
+# required by net-proxy/v2ray-5.42.0::gentoo-zh
+# required by net-proxy/v2rayA-2.2.7.5::gentoo-zh
+# required by v2rayA (argument)
+net-proxy/v2rayA ~amd64
+net-proxy/v2ray ~amd64
+app-alternatives/v2ray-geoip ~amd64
+app-alternatives/v2ray-geosite ~amd64
+virtual/v2ray-geoip ~amd64
+virtual/v2ray-domain-list-community ~amd64
+dev-libs/v2ray-geoip-bin ~amd64
+dev-libs/v2ray-domain-list-community-bin ~amd64

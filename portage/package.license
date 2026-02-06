@@ -1,0 +1,5 @@
+# required by sys-kernel/linux-firmware (argument)
+sys-kernel/linux-firmware linux-fw-redistributable
+sys-firmware/intel-microcode intel-ucode
+# required by nvidia-drivers (argument)
+=x11-drivers/nvidia-drivers-580.126.09 NVIDIA-2025
