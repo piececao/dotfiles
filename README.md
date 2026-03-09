@@ -5,6 +5,7 @@
 |`./waybar`|[Waybar](https://github.com/Alexays/Waybar),a status bar running under wayland|
 |`./nixos`|[NixOS](https://nixos.org/) Configurations|
 |`./alacritty`|[Alacritty](https://alacritty.org/) Configurations|
+|`./emacs`|Emacs Configurations and scripts|
 
 **waybar requisites**  
 FiraCode Nerd Font  
