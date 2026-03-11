@@ -11,6 +11,7 @@
 (require 'macos-config)
 ;; Other packages
 (require 'packages)
+(require 'eglot-config)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
