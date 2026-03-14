@@ -12,6 +12,7 @@
 ;; Other packages
 (require 'packages)
 (require 'eglot-config)
+(require 'appearance)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
