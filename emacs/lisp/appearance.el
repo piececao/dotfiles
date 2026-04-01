@@ -3,4 +3,6 @@
           (lambda ()
             (setq truncate-lines nil)))
 
+(setq inhibit-splash-screen t)
+
 (provide 'appearance)
