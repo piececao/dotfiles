@@ -1,17 +1,22 @@
 {
+  description = "Dell G15 5520 NixOS Configuration";
+
   inputs = {
-    # This is pointing to an unstable release.
-    # If you prefer a stable release instead, you can this to the latest number shown here: https://nixos.org/download
-    # i.e. nixos-24.11
-    # Use `nix flake update` to update the flake to the latest revision of the chosen release channel.
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.url = "https://mirrors.ustc.edu.cn/nix-channels/nixos-25.05/nixexprs.tar.xz";
+    #nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    nixpkgs.url = "git+https://mirrors.cernet.edu.cn/nixpkgs.git?ref=nixos-26.05&shallow=1";
+    #nixpkgs.url = "https://mirror.nju.edu.cn/git/nixpkgs.git";
   };
-  outputs = inputs@{ self, nixpkgs, ... }: {
-    # NOTE: 'nixos' is the default hostname
-    nixosConfigurations.Piececao = nixpkgs.lib.nixosSystem {
-      modules = [ ./configuration.nix ];
+
+  outputs = { self, nixpkgs, ... }@inputs: {
+    nixosConfigurations = {
+      # Replace "ZOOT" with your actual hostname if it's different
+      ZOOT = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = [
+          ./configuration.nix
+        ];
+      };
     };
   };
 }
-

@@ -2,14 +2,19 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1748586159,
-        "narHash": "sha256-+buxl/6pynOmVvTeqiom/317JDTDf/kzmvAP6zQ38PM=",
-        "type": "tarball",
-        "url": "https://mirrors.ustc.edu.cn/nix-channels/nixos-25.05/nixexprs.tar.xz"
+        "lastModified": 1791254437,
+        "narHash": "sha256-qMSsgG+9tIdx282dMqGuJAUK3t6F36clM6efd0rXfes=",
+        "ref": "nixos-26.05",
+        "rev": "b25309931cfda5f0b8805f462a29897eeae50168",
+        "shallow": true,
+        "type": "git",
+        "url": "https://mirrors.cernet.edu.cn/nixpkgs.git"
       },
       "original": {
-        "type": "tarball",
-        "url": "https://mirrors.ustc.edu.cn/nix-channels/nixos-25.05/nixexprs.tar.xz"
+        "ref": "nixos-26.05",
+        "shallow": true,
+        "type": "git",
+        "url": "https://mirrors.cernet.edu.cn/nixpkgs.git"
       }
     },
     "root": {
